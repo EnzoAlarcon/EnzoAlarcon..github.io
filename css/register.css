@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    color: #000;
+    text-shadow: none;
+}
+
+.modo-claro {
+  background-image: linear-gradient(135deg, #906bd4, #5a1ad1);
+}
+
+.modo-claro nav {
+  background-color: rgba(255, 255, 255, 0.493) !important;
+}
+
+.modo-claro nav .cambi  {
+  color: #0d0718;
+  font-weight: bold;
+}
+
+.modo-claro nav #cambio {
+  filter:invert(100%)
+}
+
+#mail {
+  opacity: 0;
+}
+
+
+/*NAV*/
+
+
+nav li img {
+  width: 24px;
+  height: 24px;
+}
+
+/*BODY */
+
+body {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(90deg, #0d0718, #2f0f63);
+    transition:all 10s;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contenedor-form {
+
+    background-color: #f3f3f3;
+  border-radius: 10px;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+  padding: 50px;
+  max-width: 700px;
+  margin-top: 100px;
+  }
+  
+  .formulario {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    text-align: left;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="text"],
+  .form-group input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ffffff;
+    transition: border-color 0.2s ease-in-out;
+  }
+  
+  .form-group input[type="text"]:focus,
+  .form-group input[type="email"]:focus {
+    border-color: #0077cc;
+    outline: none;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #005fa3;
+  }
+  
+  
+  h1, h2, h3, p {
+    color: #000;
+    text-shadow: none;
+  }
+
+  h1 {
+    font-weight: 800;
+  }
+  h3 {
+    color: rgb(18, 90, 4);
+    font-weight: bolder;
+  }
+  
+  /*FOOTER*/
+
+footer {
+  display: block;
+  background-image: linear-gradient(90deg, #0d0718a4, #2f0f6385);
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.377);
+
+}
+
+
+.comparte {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 20px;
+}
+
+.text-comp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0;
+  padding: 20px;
+}
+
+.comparte-texto {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: calc(2vw+1rem);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.comparte-linea {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  transform: translateY(-50%);
+}
+
+.text-comp:before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(135deg, #5f318d, #751579);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+}
+
+
+.contenedor-comparte {
+  display: inline-block;
+}
+
+.mapa {
+  background: linear-gradient(135deg, #2b0433, #150336);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.377);
+}
+
+.mapa .mapa-info h3 {
+  color:aquamarine;
+}
+
+.mapa .mapa-info p {
+  color: white;
+}
+
+.redes img {
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 60%;
+}
+
+.redes img:hover {
+  background: linear-gradient(135deg, #2b0433, #150336);
+  color: #fff;
+}

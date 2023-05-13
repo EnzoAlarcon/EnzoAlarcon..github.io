@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo-virbela.png" type="image/x-icon">
+    <title>Virbela - Registro</title>
+    <link rel="stylesheet"
+      href="https://bootswatch.com/5/vapor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <script src="js/form.js"></script>
+
+
+    <!--Boton del nav-->
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+        style="--bs-bg-opacity: .5;">
+        <div class="container-fluid">
+        <a href="index.html"><img src="img/logo-virbela.png" class="justify-content-between" style="height: 24px; width: 30px;"></a>
+
+          <button class="navbar-toggler ml-left" type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse justify-content-between"
+            id="navbarNav">
+            <div class="">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-row">
+                <li class="nav-item">
+                  <p class="nav-link cambi ms-3">Compartir </p>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/"
+                    target="_blank"><img src="img/facebook.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://twitter.com/"
+                    target="_blank"><img src="img/twitter.png"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/"
+                    target="_blank"><img src="img/linkedin.png"></a>
+                </li>
+              </ul>
+            </div>
+            <div id="derec" class="ms-auto d-flex flex-column text-center">
+              <a href="#" class="btn btn-primary me-2 w-100" style="padding: 5px
+                100px">Más información</a>
+              <a href="index.html" id="inicio" class="btn
+                btn-outline-primary w-100 cambi">Inicio</a>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-link" id="modoclaro">
+                <img id="cambio" src="img/modo-oscuro.png" style="width: 24px; height:
+                  24px;">
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="contenedor-form">
+        <div class="datos">
+          <h1>REGISTRATE AHORA</h1>
+          <h2>Complete el siguiente formulario para registrarse en el evento.</h2>
+          <h3>Detalle del evento</h3>
+          <p>Jueves 13 de mayo, 12:00 p.m.</p>
+          <ul>
+            <li>Mesa redonda de 60 minutos</li>
+            <li>Sesión de networking 'Conozca a los oradores' de 30 minutos</li>
+          </ul>
+        </div>
+        <div class="formulario">
+          <form id="form">
+            <div class="form-group">
+              <label for="nombre">Nombres: <span>*</span></label>
+              <input type="text" id="nombre" name="nombre" required>
+              <label for="apellido">Apellidos: <span>*</span></label>
+              <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+              <label for="compania">Nombre de Empresa: <span>*</span></label>
+              <input type="text" id="compania" name="compania" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email: <span>*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit">Enviar</button>
+          </form>
+          <a href="mailto:enzoalarcoasdasn01@gmail.com" id="mail">mail</a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="comparte">
+        <h2 class="text-comp">
+          <span class="comparte-texto">Comparte en tus redes sociales</span>
+          <span class="comparte-linea"></span>
+        </h2>
+        <div class="contenedor-comparte">
+          <div class="redes">
+            <a href="https://www.facebook.com/"> <img src="img/facebook.png"
+                alt="facebook"></a>
+            <a href="https://twitter.com/"> <img src="img/twitter.png"
+                alt="facebook"></a>
+            <a href="https://www.linkedin.com/"> <img src="img/linkedin.png"
+                alt="facebook"></a>
+          </div>
+          <div class="mapa">
+            <div class="mapa-ubicacion">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.4074815758718!2d0.045695399246290305!3d51.1009416287758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47df59295ff4b82d%3A0x2186b0f629100f90!2sVirbela%20Institute%2C%20Forest%20Row%20RH18%205JX%2C%20Reino%20Unido!5e0!3m2!1ses-419!2sar!4v1683946509863!5m2!1ses-419!2sar"
+                width="300" height="200" style="border:0;" allowfullscreen=""
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="mapa-info">
+              <h3>Virbela</h3>
+              <p>Ubicacion</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
