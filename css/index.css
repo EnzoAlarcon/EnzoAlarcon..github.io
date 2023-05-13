@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 /*NAV*/
@@ -20,9 +20,8 @@ body {
     justify-content: center;
     min-height: 100vh;
     background-image: linear-gradient(90deg, #0d0718, #2f0f63);
-    transition:all 10s;
+    transition: all 10s;
 }
-
 
 /*SECCION PRINCIPAL*/
 
@@ -88,10 +87,6 @@ body {
 
 /*Seccion 2 detallecitos*/
 
-#detalles {
-    margin-top: 300px;
-}
-
 #detalles .contenedor-detalles {
     display: flex;
     justify-content: center;
@@ -104,9 +99,9 @@ body {
     border-radius: 5px;
     max-width: 1200px;
     height: 120px;
-    box-shadow: 
-        inset 0px 0px 20px rgba(0,0,0,0.1),
-        0px 0px 20px rgba(0,0,0,0.1);
+    box-shadow:
+        inset 0px 0px 20px rgba(0, 0, 0, 0.1),
+        0px 0px 20px rgba(0, 0, 0, 0.1);
 }
 
 #detalles .detallecitos {
@@ -131,7 +126,8 @@ body {
     padding-top: 10px;
 }
 
-#detalles h5, h3 {
+#detalles h5,
+h3 {
     color: rgb(222, 255, 37);
 }
 
@@ -144,14 +140,12 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    
+
 }
 
 
 /*SECCION titulo*/
-#titulo {
-    margin-top: 300px;
-}
+
 
 #titulo .topic-evento {
     display: flex;
@@ -194,12 +188,12 @@ body {
     height: 250px;
     overflow: hidden;
     scroll-behavior: smooth;
-  }
-  
-  
-  .control {
-      position: absolute;
-      width: 50px;
+}
+
+
+.control {
+    position: absolute;
+    width: 50px;
     height: 50px;
     border-radius: 50%;
     background-color: rgb(204, 204, 204);
@@ -228,13 +222,9 @@ body {
 
 /*mas info*/
 
-#masinfo {
-    padding-top: 300px;
-}
-
 .contenedor-info {
     display: flex;
-    padding-bottom:300px ;
+    padding-bottom: 300px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -273,7 +263,7 @@ body {
 .registrate button {
     border: 2px solid #000000;
     box-shadow: #0d0718;
-    background:linear-gradient(135deg, #9070b1, #ec27f3);
+    background: linear-gradient(135deg, #9070b1, #ec27f3);
     color: #ffffff;
     font-size: 1.2rem;
     padding: 20px 60px;
@@ -315,9 +305,9 @@ footer {
     position: relative;
     margin: 0;
     padding: 20px;
-  }
-  
-  .comparte-texto {
+}
+
+.comparte-texto {
     position: relative;
     z-index: 2;
     color: white;
@@ -325,9 +315,9 @@ footer {
     font-weight: bold;
     text-transform: uppercase;
     text-align: center;
-  }
-  
-  .comparte-linea {
+}
+
+.comparte-linea {
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -335,18 +325,18 @@ footer {
     height: 1px;
     background-color: #fff;
     transform: translateY(-50%);
-  }
-  
-  .text-comp:before {
+}
+
+.text-comp:before {
     content: '';
     position: absolute;
     z-index: 0;
     width: 100%;
     height: 100%;
-    background:linear-gradient(135deg, #5f318d, #751579);
+    background: linear-gradient(135deg, #5f318d, #751579);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  }
-  
+}
+
 
 .contenedor-comparte {
     display: inline-block;
@@ -360,7 +350,7 @@ footer {
 }
 
 .mapa .mapa-info h3 {
-    color:aquamarine;
+    color: aquamarine;
 }
 
 .mapa .mapa-info p {
@@ -380,23 +370,25 @@ footer {
     background: linear-gradient(135deg, #2b0433, #150336);
     color: #fff;
 }
-  
 
-  
+
+/*media queries*/
+
 
 @media only screen and (max-width: 768px) {
-  .container .slider {
-    height: 150px;
-  }
-  .cotenedor-info .event{
-    display: block;
-  }
+    .container .slider {
+        height: 150px;
+    }
+
+    .cotenedor-info .event {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-  .container .slider {
-    height: 100px;
-  }
+    .container .slider {
+        height: 100px;
+    }
 
 }
 
@@ -409,7 +401,7 @@ footer {
     background-color: rgba(255, 255, 255, 0.493) !important;
 }
 
-.modo-claro nav .cambi  {
+.modo-claro nav .cambi {
     color: #0d0718;
     font-weight: bold;
 }
@@ -423,10 +415,16 @@ footer {
 }
 
 .modo-claro .registrate button:hover {
-    background:linear-gradient(135deg, #9070b1, #ec27f3);
+    background: linear-gradient(135deg, #9070b1, #ec27f3);
     color: #fff;
 }
 
 .modo-claro nav #cambio {
-    filter:invert(100%)
+    filter: invert(100%)
+}
+
+#masinfo,
+#titulo,
+#detalles {
+    padding-top: 300px;
 }
